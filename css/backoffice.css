@@ -1,0 +1,375 @@
+.process-icon-help
+{
+	background-image: url("../img/toolbar/help.png") !important;
+}
+
+.process-icon-settings
+{
+	background-image: url("../img/toolbar/setting_tools.png") !important;
+}
+
+.process-icon-csv
+{
+	background-image: url("../img/toolbar/csv_tools.png") !important;
+}
+
+.process-icon-shipment_list
+{
+	background-image: url("../img/toolbar/shipment_list.png") !important;
+}
+
+/* hides prestashop help button */
+li.help-context-AdminModules, li.help-context-adminmodules
+{
+	display: none !important;
+}
+
+/* #ajax_running override removed: PS9 BO header (admin/themes/default/template/header.tpl)
+   already renders a <span id="ajax_running"> spinner with proper styling in
+   _header.scss:387. The legacy yellow-rectangle override below was a relic of older PS
+   versions that lacked a header spinner; in PS9 it pinned a 300px yellow box at the top
+   of the screen every time slideDown() fired, which looked broken. Remove the override
+   and let the core theme style the spinner. */
+
+fieldset .optionsDescription, fieldset p.description, .info {
+	background: url("../img/icon-info.png") no-repeat scroll 6px 6px #BDE5F8;
+	border: 1px solid #00529B;
+	border-radius: 3px 3px 3px 3px;
+	color: #00529B;
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	font-size: 12px;
+	margin-bottom: 15px;
+	min-height: 32px;
+	padding: 10px 5px 5px 40px;
+}
+
+#custom_web_service_container
+{
+	display: none;
+}
+
+p.connection_message
+{
+	display: none;
+}
+
+.csv_information_block
+{
+	margin-left: 100px;
+}
+
+img.pagination_image
+{
+	margin-bottom: 4px;
+}
+
+table#shipment_list tr.nodrag.nodrop a,
+table#shipment_list tr.nodrag.nodrop a:hover
+{
+	text-decoration: none;
+}
+
+#dpdgeopost_pickup_dialog.dpd-modal
+{
+	display: none;
+	width: 520px;
+	max-width: calc(100vw - 32px);
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 16px 48px rgba(16, 24, 40, 0.18), 0 2px 8px rgba(16, 24, 40, 0.08);
+	overflow: hidden;
+	font-family: inherit;
+	color: #25354c;
+}
+
+.dpd-modal__header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 24px;
+	border-bottom: 1px solid #e6eaf2;
+	background: #f7f9fc;
+}
+
+.dpd-modal__header h2
+{
+	margin: 0;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #1b2638;
+}
+
+.dpd-modal__close
+{
+	border: 0;
+	background: transparent;
+	font-size: 26px;
+	line-height: 1;
+	color: #7a8599;
+	cursor: pointer;
+	padding: 0 4px;
+	transition: color 0.15s ease;
+}
+
+.dpd-modal__close:hover
+{
+	color: #1b2638;
+}
+
+.dpd-modal__body
+{
+	padding: 22px 24px 8px;
+}
+
+.dpd-modal__footer
+{
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding: 16px 24px;
+	border-top: 1px solid #e6eaf2;
+	background: #fafbfd;
+}
+
+.dpd-modal__footer .btn
+{
+	min-width: 96px;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-group
+{
+	margin-bottom: 18px;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-row
+{
+	display: flex;
+	gap: 12px;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-row .dpd-form-col
+{
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-label
+{
+	display: block;
+	width: auto;
+	margin-bottom: 6px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1b2638;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-group .form-control
+{
+	display: block;
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #25354c;
+	background: #fff;
+	border: 1px solid #ccd3e0;
+	border-radius: 6px;
+	box-sizing: border-box;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-group .form-control:focus
+{
+	outline: 0;
+	border-color: #dc0032;
+	box-shadow: 0 0 0 3px rgba(220, 0, 50, 0.12);
+}
+
+#dpdgeopost_pickup_dialog .dpd-form-help
+{
+	display: block;
+	margin-top: 4px;
+	font-size: 12px;
+	color: #7a8599;
+}
+
+#dpdgeopost_pickup_dialog .dpd-required
+{
+	color: #dc0032;
+	font-weight: 700;
+	margin-left: 2px;
+}
+
+#dpdgeopost_pickup_dialog .dpd-required-note
+{
+	margin: 4px 0 0;
+	font-size: 12px;
+	color: #7a8599;
+}
+
+#dpdgeopost_pickup_dialog textarea
+{
+	width: 100%;
+	height: 90px;
+}
+
+#dpdgeopost_pickup_dialog .error, #content .error {
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px;
+	min-height: 28px;
+	padding: 13px 5px 5px 40px;
+	background: url("../img/icon-cancel.png") no-repeat scroll 6px 6px #FFBABA;
+	border: 1px solid #CC0000;
+	color: #D8000C;
+}
+
+#address_validation_block
+{
+	display: none;
+}
+
+#custom_web_service_container input
+{
+	width: 400px;
+}
+
+#active_services .carriers_block
+{
+	width: 450px;
+	float: left;
+}
+
+#active_services .carriers_cod_block
+{
+	float: left;
+	width: 440px;
+	border-left: solid 1px #CCC;
+}
+
+.cod_selection_warning
+{
+	display: none;
+	width: auto !important;
+}
+
+div.toggle_csv_info_link_container, div.toggle_cod_info_link_container
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+a#toggle_csv_info_link, a#toggle_cod_info_link
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a#toggle_csv_info_link:hover, a#toggle_cod_info_link:hover
+{
+	text-decoration: none;
+}
+
+div#toggle_csv_info, div#toggle_cod_info
+{
+	display: none;
+    border: 1px solid #FFFFFF;
+}
+
+div.csv_info_container, div.cod_info_container
+{
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+	display: block;
+}
+
+div.csv_info_container span, div.cod_info_container span
+{
+	display: block;
+	padding: 5px;
+}
+
+div.csv_info_container span span, div.cod_info_container span span
+{
+	display: block;
+	margin: 0 0 0 30px;
+	padding: 5px;
+}
+
+#cod_settings_container div.margin-form label
+{
+	float: none;
+}
+
+.toolbarBox ul.cc_button {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0 0 15px;
+	padding: 0;
+	list-style-type: none;
+}
+.toolbarBox ul.cc_button li {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 0 15px 0 0;
+	padding: 0;
+}
+.toolbarBox ul.cc_button li:last-child {
+	margin-right: 0;
+}
+
+.clear.list.info {
+	padding-left: 40px;
+}
+/* Request-courier action bar — sits below the HelperList panel as a footer-style strip.
+   No longer wrapped in a .panel-footer (we removed the outer panel) so we redo the same
+   visual treatment directly on the dpd-shipment-list-footer. The negative top margin
+   pulls it tight against HelperList's panel so it reads as one continuous block. */
+#fieldset_shipments .dpd-shipment-list-footer {
+	margin-top: -10px;
+	padding: 12px 20px;
+	background: #fafbfc;
+	border: 1px solid #e0e6ed;
+	border-top: 0;
+	border-radius: 0 0 3px 3px;
+	text-align: right;
+}
+#fieldset_shipments .dpd-shipment-list-footer .btn { margin-left: 8px; }
+
+/* DPD address-validation panel toggle on the admin order page. The caret icon
+   rotates 180° when the panel expands; smooth that transition so it doesn't
+   jump. The panel itself is hidden via inline style in adminOrder.tpl, so no
+   display rule needed here. */
+.js-toggle-dpd-normalizer .js-toggle-caret {
+	display: inline-block;
+	margin-left: 4px;
+	transition: transform 0.15s ease;
+}
+
+/* Date filter cells (Date shipped / Order date / DPD pickup) — HelperList renders the
+   From/To inputs as two <div class="input-group fixed-width-md"> children of
+   <div class="date_range row"> (admin/themes/default/template/helpers/list/list_header.tpl
+   line 336). The fixed-width-md width plus the wrapping .row default makes them stack on
+   two lines. Override scoped to this list only: lay them out side-by-side with shrunk
+   widths so both fit on one row. */
+#fieldset_shipments table .date_range.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 4px;
+	margin: 0;
+}
+#fieldset_shipments table .date_range.row .input-group.fixed-width-md {
+	flex: 1 1 0;
+	width: auto;
+	min-width: 0;
+}
+#fieldset_shipments table .date_range.row .input-group .form-control {
+	min-width: 0;
+}
