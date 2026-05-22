@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>dpdgeopost</name>
+    <displayName><![CDATA[DPD GeoPost]]></displayName>
+    <version><![CDATA[1.0.1]]></version>
+    <description><![CDATA[DPD GeoPost shipping module]]></description>
+    <author><![CDATA[DPD Romania]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <ps_versions_compliancy>
+        <min><![CDATA[8.0.0]]></min>
+        <max><![CDATA[9.1.0]]></max>
+    </ps_versions_compliancy>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>
